@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <div>
+            <table style="margin-left: auto; margin-right: auto;" class="strp">
+                <tr>
+            <th><a href="Home page.html" class="center">Home Page</a></th>
+            <th><a href="Items page.html" class="center">Items Page</a></th>
+            <th><a href="Online Shopping Form.html" class="center">Shopping Page</a></th>
+            <th><a href="Contact Us.html" class="center">Contact Us</a></th>
+                </tr>
+            </table>
+        </div>
+        <title>
+            Online Shopping Form
+        </title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <br>
+        <table class="shp">
+            <tr>
+                <th class="shp">Image</th>
+                <th class="shp">Name</th>
+                <th class="shp">Size</th>
+                <th class="shp">Quantity</th>
+                <th class="shp">Price</th>
+            </tr>
+            <tr>
+                <td class="shp"><img src="images/s1.png" class="image" ></td>
+                <td class="shp"><input type="checkbox" id="Milan" name="Milan" onclick="item1CheckBox()"><label for="Milan">AC Milan 22/23 4th kit</label></td>
+                
+                <td class="shp">
+                    <input type="radio" id="pr1" name="propertyitem1" value="500"
+                onclick="item1RadioChange(this);">
+                <label for="pr1"> L (500$)</label><br>
+            <input type="radio" id="pr2" name="propertyitem1" value="870"
+                onclick="item1RadioChange(this);">
+            <label for="pr2">XL (870$)</label><br>
+        </td>
+     
+        <td class="shp">
+            <select id="noofunitsitem1" onchange="item1Change()">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </td>
+        <td class="shp">
+            <p id="totalcostitem1">0</p>
+        </td>
+            </tr>
+            <tr>
+                <td class="shp"><img src="images/s2.png" class="image"></td>
+                <td class="shp"><input type="checkbox" id="Barcelona" name="Barcelona" onclick="item2CheckBox()"><label for="Barcelona">Barcelona 22/23 home kit</label></td>
+                </td>
+                <td class="shp">
+                    <input type="radio" id="pr1item2" name="propertyitem2" value="690"
+                        onclick="item2RadioChange(this);">
+                    <label for="pr1item2">L (690$)</label><br>
+                    <input type="radio" id="pr2item2" name="propertyitem2" value="490"
+                        onclick="item2RadioChange(this);">
+                    <label for="pr2item2">XL (490$)</label><br>
+                </td>
+                <td class="shp">
+                    <select id="noofunitsitem2" onchange="item2Change()">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+                <td class="shp">
+                    <p id="totalcostitem2">0</p>
+                </td>
+                </tr>
+            <tr class="shp">
+                <td class="shp"><img src="images/s3.png" class="image"></td>
+                <td class="shp"><input type="checkbox" id="Madrid" name="Madrid" onclick="item3CheckBox()"><label for="Madrid">Real Madrid 22/23 home kit</label></td>
+                <td class="shp">
+                    <input type="radio" id="pr1item3" name="propertyitem3" value="350"
+                        onclick="item3RadioChange(this);">
+                    <label for="pr1item3">L (350$)</label><br>
+                    <input type="radio" id="pr2item3" name="propertyitem3" value="400"
+                        onclick="item3RadioChange(this);">
+                    <label for="pr2item3">XL (400$)</label><br>
+                </td>
+                <td class="shp">
+                    <select id="noofunitsitem3" onchange="item3Change()">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+                <td class="shp">
+                    <p id="totalcostitem3">0</p>
+                </td>
+            </tr>
+            <tr class="shp">
+                <td class="shp"><img src="images/s4.png" class="image"></td>
+                <td class="shp"><input type="checkbox" id="PSG" name="PSG" onclick="item4CheckBox()"><label for="PSG">PSG 22/23 4th kit</label></td>
+                <td class="shp">
+                    <input type="radio" id="pr1item4" name="propertyitem4" value="90"
+                        onclick="item4RadioChange(this);">
+                    <label for="pr1item4">L (90$)</label><br>
+                    <input type="radio" id="pr2item4" name="propertyitem4" value="190"
+                        onclick="item4RadioChange(this);">
+                    <label for="pr2item4">XL (190$)</label><br>
+                </td>
+                <td class="shp">
+                    <select id="noofunitsitem4" onchange="item4Change()">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+                <td class="shp">
+                    <p id="totalcostitem4">0</p>
+                </td>
+            </tr>
+            <tr class="shp">
+                <td class="shp"><img src="images/s5.png" class="image"></td>
+                <td class="shp"><input type="checkbox" id="city" name="city" onclick="item5CheckBox()"><label for="city">Man City 22/23 3rd kit</label></td>
+                <td class="shp">
+                    <input type="radio" id="pr1item5" name="propertyitem5" value="90"
+                        onclick="item4RadioChange(this);">
+                    <label for="pr1item5">L (90$)</label><br>
+                    <input type="radio" id="pr2item5" name="propertyitem5" value="190"
+                        onclick="item5RadioChange(this);">
+                    <label for="pr2item5">XL (190$)</label><br>
+                </td>
+                <td class="shp">
+                    <select id="noofunitsitem5" onchange="item5Change()">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+                <td class="shp">
+                    <p id="totalcostitem5">0</p>
+                </td>
+            </tr>
+            <tr class="shp">
+                <td class="shp"><img src="images/s6.png" class="image"></td>
+                <td class="shp"><input type="checkbox" id="bayern" name="bayern" onclick="item6CheckBox()"><label for="bayern">FC Bayern 22/23 away kit</label></td>
+                <td class="shp">
+                    <input type="radio" id="pr1item6" name="propertyitem6" value="90"
+                        onclick="item6RadioChange(this);">
+                    <label for="pr1item6">L (90$)</label><br>
+                    <input type="radio" id="pr2item6" name="propertyitem6" value="190"
+                        onclick="item7RadioChange(this);">
+                    <label for="pr2item6">XL (190$)</label><br>
+                </td>
+                <td class="shp">
+                    <select id="noofunitsitem6" onchange="item6Change()">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+                <td class="shp">
+                    <p id="totalcostitem6">0</p>
+                </td>
+            </tr>
+            <tr class="str">
+                <td colspan="2">TOTAL COST (After 15% discount)</td>
+                <td ><button onclick="calculateTotalCostAfterDiscount()">CALCULATE</button></td>
+                <td>
+                    <p id="totalcostafterdiscount">0</p>
+                </td>
+            </tr>
+        </table>    
+        <script src="javascript/index.js"></script>
+    </body>
+
+</html>
